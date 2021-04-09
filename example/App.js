@@ -6,11 +6,19 @@ import KinLibrary from 'react-native-kin-library';
 export default class App extends React.Component {
   onPress = () => {
     // KinLibrary.startSDK();
-    KinLibrary.generateRandomKeyPair((error, events) => {
+    // KinLibrary.generateRandomKeyPair((error, events) => {
+    //   if (error) {
+    //     console.error(error);
+    //   } else {
+    //     console.log(events);
+    //   }
+    // });
+
+    KinLibrary.createNewAccount((error, accountId) => {
       if (error) {
         console.error(error);
       } else {
-        console.log(events);
+        console.log(accountId);
       }
     });
   };

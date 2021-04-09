@@ -224,6 +224,7 @@ SWIFT_CLASS("_TtC6KinSDK18HomeViewController")
 SWIFT_CLASS_NAMED("KinSDKUtils")
 @interface KinSDKUtils : NSObject
 + (NSArray<NSString *> * _Nonnull)generateRandomKeyPair SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)createAccount SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

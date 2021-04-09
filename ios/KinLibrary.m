@@ -31,4 +31,10 @@ RCT_EXPORT_METHOD(generateRandomKeyPair: (RCTResponseSenderBlock) callback){
     callback (@ [[NSNull null], key]);
 }
 
+RCT_EXPORT_METHOD(createNewAccount: (RCTResponseSenderBlock) callback){
+    NSString *accountId = [KinSDKUtils createAccount];
+    NSLog(@"Using initWithFormat:   %@\n", accountId);
+    callback (@ [[NSNull null], @[accountId]]);
+}
+
 @end
