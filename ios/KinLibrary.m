@@ -23,4 +23,12 @@ RCT_EXPORT_METHOD(startSDK){
       });
 }
 
+RCT_EXPORT_METHOD(generateRandomKeyPair: (RCTResponseSenderBlock) callback){
+//    NSString *key = [KinSDKUtils generateRandomKeyPair];
+    NSArray * key = [KinSDKUtils generateRandomKeyPair];
+    NSLog(@"Using initWithFormat:   %@\n", key);
+//    callback(@[key]);
+    callback (@ [[NSNull null], key]);
+}
+
 @end

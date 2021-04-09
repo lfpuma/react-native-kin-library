@@ -190,6 +190,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreGraphics;
 @import Foundation;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -217,6 +218,13 @@ SWIFT_CLASS("_TtC6KinSDK18HomeViewController")
 - (void)viewWillLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS_NAMED("KinSDKUtils")
+@interface KinSDKUtils : NSObject
++ (NSArray<NSString *> * _Nonnull)generateRandomKeyPair SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

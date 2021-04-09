@@ -6,8 +6,10 @@ import KinBase
 import KinDesign
 @_exported import KinSDK
 import KinUX
+import Promises
 import Swift
 import UIKit
+import stellarsdk
 @_hasMissingDesignatedInitializers @objc(KinWalletDemoViewController) public class KinWalletDemoViewController : UIKit.UIViewController {
   @objc dynamic public init()
   @objc override dynamic public func viewDidLoad()
@@ -27,6 +29,11 @@ extension KinWalletDemoViewController : UIKit.UITableViewDataSource {
 }
 extension KinWalletDemoViewController : UIKit.UITableViewDelegate {
   @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+@_inheritsConvenienceInitializers @objc(KinSDKUtils) public class KinSDKUtils : ObjectiveC.NSObject {
+  @objc(generateRandomKeyPair) public static func generateRandomKeyPair() -> [Swift.String]
+  @objc deinit
+  @objc override dynamic public init()
 }
 @objc @_inheritsConvenienceInitializers public class HomeViewController : UIKit.UIViewController {
   @objc override dynamic public func viewDidLoad()

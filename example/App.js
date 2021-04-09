@@ -5,7 +5,14 @@ import KinLibrary from 'react-native-kin-library';
 
 export default class App extends React.Component {
   onPress = () => {
-    KinLibrary.startSDK();
+    // KinLibrary.startSDK();
+    KinLibrary.generateRandomKeyPair((error, events) => {
+      if (error) {
+        console.error(error);
+      } else {
+        console.log(events);
+      }
+    });
   };
 
   render = () => (

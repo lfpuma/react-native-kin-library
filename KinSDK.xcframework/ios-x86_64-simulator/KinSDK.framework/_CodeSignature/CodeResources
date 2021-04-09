@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/KinSDK-Swift.h</key>
 		<data>
-		QFzOKTdVTvG+9TVGIGEXswB9dv8=
+		hdmNkJxASadSJxekHKAJPucSajI=
 		</data>
 		<key>Headers/KinSDK.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/KinSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		AhA9CMYbPsO56H81cj52VxIHNFs=
+		t1+GxsBxhDHpjqYAseYcJlwTkXU=
 		</data>
 		<key>Modules/KinSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		AhA9CMYbPsO56H81cj52VxIHNFs=
+		t1+GxsBxhDHpjqYAseYcJlwTkXU=
 		</data>
 		<key>Modules/KinSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/KinSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		e7xLHlHzDMBp59yHywPjtx2x58U=
+		wNCVXTEMVuGEbjCSR5hdf3olyJ8=
 		</data>
 		<key>Modules/KinSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Y8R/zjWrxip9ahvBcD+XXevB1XY=
+		Irmq9V8BXg2r53v8eMJgdf8es0g=
 		</data>
 		<key>Modules/KinSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/KinSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		e7xLHlHzDMBp59yHywPjtx2x58U=
+		wNCVXTEMVuGEbjCSR5hdf3olyJ8=
 		</data>
 		<key>Modules/KinSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Y8R/zjWrxip9ahvBcD+XXevB1XY=
+		Irmq9V8BXg2r53v8eMJgdf8es0g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -59,7 +59,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9EUM3cnjq6HKQYRx1buKirwwWeYXpeBMJAAHwbjVsFM=
+			/IPSLkSDSwoFgK8c3EsGGsi1GQO8tukyao/NW6vXw1A=
 			</data>
 		</dict>
 		<key>Headers/KinSDK.h</key>
@@ -73,14 +73,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pzf0xLFeUdRTKWhgXPYz8fO8R4NLmNka0NBz0X+ICsY=
+			rO/TCL7Mhdh8LBD4Oxx0iBNDK3ow9gb934DiVodIDV4=
 			</data>
 		</dict>
 		<key>Modules/KinSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pzf0xLFeUdRTKWhgXPYz8fO8R4NLmNka0NBz0X+ICsY=
+			rO/TCL7Mhdh8LBD4Oxx0iBNDK3ow9gb934DiVodIDV4=
 			</data>
 		</dict>
 		<key>Modules/KinSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -94,14 +94,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			phEwJzOdygj/ZbJejFwqeEk6MGFuO9Gda3gEIgrTOvk=
+			fBIHTkYB6jA5PqglzRHsNUcUIFQ051UDL5/H7xL7Mns=
 			</data>
 		</dict>
 		<key>Modules/KinSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9hSbW5Ao4h2bF6d1YUKJaPgvmConoHFeP3t7BYH7uis=
+			aJwc6Ib5HLDca8ycs00ub2J1PRuJD04+Jdw4xSvXxOM=
 			</data>
 		</dict>
 		<key>Modules/KinSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -115,14 +115,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			phEwJzOdygj/ZbJejFwqeEk6MGFuO9Gda3gEIgrTOvk=
+			fBIHTkYB6jA5PqglzRHsNUcUIFQ051UDL5/H7xL7Mns=
 			</data>
 		</dict>
 		<key>Modules/KinSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9hSbW5Ao4h2bF6d1YUKJaPgvmConoHFeP3t7BYH7uis=
+			aJwc6Ib5HLDca8ycs00ub2J1PRuJD04+Jdw4xSvXxOM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
