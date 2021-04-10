@@ -37,4 +37,13 @@ RCT_EXPORT_METHOD(createNewAccount: (RCTResponseSenderBlock) callback){
     callback (@ [[NSNull null], @[accountId]]);
 }
 
+RCT_EXPORT_METHOD(sendPayment: (NSString *)accountId
+                  amountString: (NSString *)amountString
+                  description: (NSString *)description
+                  memoString: (NSString *)memoString
+                  callback: (RCTResponseSenderBlock) callback) {
+    
+    [KinSDKUtils sendPayment: accountId :amountString :description :memoString : callback];
+}
+
 @end

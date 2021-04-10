@@ -33,6 +33,7 @@ extension KinWalletDemoViewController : UIKit.UITableViewDelegate {
 @_inheritsConvenienceInitializers @objc(KinSDKUtils) public class KinSDKUtils : ObjectiveC.NSObject {
   @objc(generateRandomKeyPair) public static func generateRandomKeyPair() -> [Swift.String]
   @objc(createAccount) public static func createAccount() -> Swift.String
+  @objc(sendPayment:::::) public static func sendPayment(_ accountId: Swift.String, amountString: Swift.String, description: Swift.String, memoString: Swift.String, callback: @escaping ([Swift.String]) -> Swift.Void)
   @objc deinit
   @objc override dynamic public init()
 }

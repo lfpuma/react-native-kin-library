@@ -225,6 +225,7 @@ SWIFT_CLASS_NAMED("KinSDKUtils")
 @interface KinSDKUtils : NSObject
 + (NSArray<NSString *> * _Nonnull)generateRandomKeyPair SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)createAccount SWIFT_WARN_UNUSED_RESULT;
++ (void)sendPayment:(NSString * _Nonnull)accountId :(NSString * _Nonnull)amountString :(NSString * _Nonnull)description :(NSString * _Nonnull)memoString :(void (^ _Nonnull)(NSArray<NSString *> * _Nonnull))callback;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

@@ -19,6 +19,15 @@ export default class App extends React.Component {
         console.error(error);
       } else {
         console.log(accountId);
+        KinLibrary.sendPayment(
+          accountId[0],
+          '1',
+          'des test',
+          'memo test',
+          result => {
+            console.log(result);
+          },
+        );
       }
     });
   };
