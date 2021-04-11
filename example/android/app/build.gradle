@@ -188,6 +188,11 @@ dependencies {
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
+//    implementation "org.kin.sdk.android:base:0.4.5"
+//    implementation ("org.kin.sdk.android:spend:0.4.5") { transitive = false }
+//    implementation "org.kin.sdk.android:design:0.4.5"
+//    implementation ("org.kin.sdk.android:base-compat:0.4.5") { transitive = false }
+
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
