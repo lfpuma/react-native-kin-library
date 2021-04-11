@@ -42,3 +42,4 @@ buck-out/
 *.keystore
 example/ios/Podfile.lock
 example/yarn.lock
+package-lock.json
