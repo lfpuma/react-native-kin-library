@@ -34,6 +34,7 @@ extension KinWalletDemoViewController : UIKit.UITableViewDelegate {
   @objc(generateRandomKeyPair) public static func generateRandomKeyPair() -> [Swift.String]
   @objc(createAccount) public static func createAccount() -> Swift.String
   @objc(sendPayment:::::) public static func sendPayment(_ accountId: Swift.String, amountString: Swift.String, description: Swift.String, memoString: Swift.String, callback: @escaping ([Swift.String]) -> Swift.Void)
+  @objc(getBalance::) public static func getBalance(_ accountId: Swift.String, callback: @escaping ([Swift.String]) -> Swift.Void)
   @objc deinit
   @objc override dynamic public init()
 }

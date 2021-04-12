@@ -26,14 +26,12 @@ RCT_EXPORT_METHOD(startSDK){
 RCT_EXPORT_METHOD(generateRandomKeyPair: (RCTResponseSenderBlock) callback){
 //    NSString *key = [KinSDKUtils generateRandomKeyPair];
     NSArray * key = [KinSDKUtils generateRandomKeyPair];
-    NSLog(@"Using initWithFormat:   %@\n", key);
 //    callback(@[key]);
     callback (@ [[NSNull null], key]);
 }
 
 RCT_EXPORT_METHOD(createNewAccount: (RCTResponseSenderBlock) callback){
     NSString *accountId = [KinSDKUtils createAccount];
-    NSLog(@"Using initWithFormat:   %@\n", accountId);
     callback (@ [[NSNull null], @[accountId]]);
 }
 
@@ -44,6 +42,12 @@ RCT_EXPORT_METHOD(sendPayment: (NSString *)accountId
                   callback: (RCTResponseSenderBlock) callback) {
     
     [KinSDKUtils sendPayment: accountId :amountString :description :memoString : callback];
+}
+
+RCT_EXPORT_METHOD(getBalance: (NSString *)accountId
+                  callback: (RCTResponseSenderBlock) callback) {
+    NSLog(@"Using initWithFormat:   %@\n", accountId);
+    [KinSDKUtils getBalance: accountId : callback];
 }
 
 @end
