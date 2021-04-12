@@ -13,6 +13,8 @@ import org.jetbrains.annotations.NotNull;
 import org.kin.sdk.base.models.KinPayment;
 import org.kin.stellarfork.KeyPair;
 
+import java.util.List;
+
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
@@ -65,6 +67,28 @@ public class KinLibraryModule extends ReactContextBaseJavaModule {
                 if (var1 == null) callback.invoke("Success");
                 else callback.invoke("Error from server");
                 return Unit.INSTANCE;
+            }
+        }));
+    }
+
+    @ReactMethod
+    public void getBalance(String accountId, final Callback callback) {
+        new KinUtils().getBalance(this.reactContext, accountId, (Function1)(new Function1() {
+            // $FF: synthetic method
+            // $FF: bridge method
+            public Object invoke(Object var1) {
+                this.invoke((List)var1);
+                return Unit.INSTANCE;
+            }
+
+            public final void invoke(@NotNull List it) {
+                Intrinsics.checkNotNullParameter(it, "it");
+                WritableArray promiseArray= Arguments.createArray();
+                for (int i = 0; i < it.size(); i ++) {
+                    promiseArray.pushString(it.get(i).toString());
+                }
+
+                callback.invoke(promiseArray);
             }
         }));
     }

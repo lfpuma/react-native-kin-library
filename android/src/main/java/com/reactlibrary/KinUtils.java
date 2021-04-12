@@ -23,6 +23,7 @@ import org.kin.sdk.base.tools.Promise;
 import org.kin.sdk.base.stellar.models.NetworkEnvironment;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
@@ -44,14 +45,21 @@ public class KinUtils {
         KinClient testNet = new KinClient(applicationContext, Environment.TEST, "appi", "testnet");
 
         try {
-            testNet.addAccount();
-            KinAccount var10000 = testNet.getAccount(0);
-            Intrinsics.checkNotNullExpressionValue(var10000, "testNet.getAccount(0)");
-            return String.valueOf(var10000.getPublicAddress());
+            KinAccount account = testNet.addAccount();
+//            KinAccount var10000 = testNet.getAccount(0);
+//            Intrinsics.checkNotNullExpressionValue(var10000, "testNet.getAccount(0)");
+            return String.valueOf(account.getPublicAddress());
         } catch (CreateAccountException var4) {
             var4.printStackTrace();
             return "";
         }
+    }
+
+    public final void getBalance(@NotNull Context context, String AccountId, Function1 callback) {
+        applicationContext = context;
+        KinEnvironment.Agora env = getKinEnvironment();
+        org.kin.sdk.base.models.KinAccount.Id account = new org.kin.sdk.base.models.KinAccount.Id(AccountId);
+        env.getService().resolveTokenAccounts(account).then(callback);
     }
 
     private Context applicationContext;

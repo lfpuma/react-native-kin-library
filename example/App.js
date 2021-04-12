@@ -19,15 +19,18 @@ export default class App extends React.Component {
         console.error(error);
       } else {
         console.log(accountId);
-        KinLibrary.sendPayment(
-          accountId[0],
-          '1',
-          'des test',
-          'memo test',
-          result => {
-            console.log(result);
-          },
-        );
+        // KinLibrary.sendPayment(
+        //   accountId[0],
+        //   '1',
+        //   'des test',
+        //   'memo test',
+        //   result => {
+        //     console.log(result);
+        //   },
+        // );
+        KinLibrary.getBalance(accountId[0], result => {
+          console.log(result);
+        });
       }
     });
   };
